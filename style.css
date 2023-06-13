@@ -1,0 +1,16 @@
+.splashScreen{
+    background: lightcoral;
+    width: 650px;
+    height: 650px;
+    border: 1px solid coral;
+    background: url('assets/Walk (1).png') no-repeat
+}
+
+
+.splashScreen-1{
+    background-position-x: 0;
+}
+
+.splashScreen-2{
+    background-position-x: -650px;
+}
