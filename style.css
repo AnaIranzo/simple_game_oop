@@ -31,3 +31,19 @@
 .pared{
     background: url('assets/objetos/Crate.png') no-repeat
 }
+
+.piedra{
+    background: url('assets/objetos/Stone.png') no-repeat
+}
+
+.arbusto{
+    background: url('assets/objetos/Bush.png') no-repeat
+}
+
+.seta{
+    background: url('assets/objetos/Mushroom.png') no-repeat
+}
+
+.personaje{
+    background: url('assets/redhatfiles/png/personaje.png') no-repeat
+}
