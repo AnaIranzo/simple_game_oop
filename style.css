@@ -1,8 +1,8 @@
 .splashScreen{
-    background: lightcoral;
+    background: lightgreen;
     width: 650px;
     height: 650px;
-    border: 1px solid coral;
+    border: 1px solid green;
     background: url('assets/splashScreen.png') no-repeat
 }
 
@@ -18,7 +18,7 @@
 .tablero{
     width: 650px;
     height: 650px;
-    border: 1px solid coral;
+    border: 1px solid green;
     background: url('assets/tablero.png') no-repeat
 }
 
