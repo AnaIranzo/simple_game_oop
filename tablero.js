@@ -62,4 +62,10 @@ class Tablero{
         
     }
 
+    bomba(){
+        var id = 'celda-'+heroe.c+'-'+heroe.r;
+        document.getElementById(id).classList.remove('personaje');
+        document.getElementById(id).classList.add('bomba');
+    }
+
 }
