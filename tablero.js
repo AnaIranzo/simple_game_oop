@@ -6,6 +6,7 @@ const PIEDRA = 2;
 const ARBUSTO = 3;
 const SETA = 4;
 const PERSONAJE = 5;
+const heroe = {c:1, r:1}// objeto con las coordenadas del heroe, en el 00 esta el marco
 const nivel1 = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1],
     [1,5,0,3,3,0,0,0,0,0,0,0,1],
@@ -63,9 +64,12 @@ class Tablero{
     }
 
     bomba(){
-        var id = 'celda-'+heroe.c+'-'+heroe.r;
-        document.getElementById(id).classList.remove('personaje');
-        document.getElementById(id).classList.add('bomba');
+        var id = 'celda-'+heroe.c+'-'+heroe.r;//pasamos la posicion del heroe
+        alert(id)
+        document.getElementById(id).classList.remove('personaje');//quitamos personaje
+        document.getElementById(id).classList.add('bomba');//ponemos bomba
     }
+
+    
 
 }
