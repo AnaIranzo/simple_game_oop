@@ -8,7 +8,7 @@ class Personaje{
       estilos.innerHTML = `
       .heroe {
         position: absolute;
-        background: url("./imagenes/redhatfiles/png/personaje.png");
+        background: url('assets/redhatfiles/png/personaje.png')   ;
         height: 50px;
         width: 50px;
         top: 0;
