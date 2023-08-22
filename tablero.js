@@ -6,7 +6,7 @@ const PIEDRA = 2;
 const ARBUSTO = 3;
 const SETA = 4;
 const PERSONAJE = 5;
-const heroe = {c:1, r:1}// objeto con las coordenadas del heroe, en el 00 esta el marco
+const heroe = {c:1, r:1, explosion:3, t:500}// objeto con las coordenadas del heroe, en el 00 esta el marco
 const nivel1 = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1],
     [1,5,0,3,3,0,0,0,0,0,0,0,1],
@@ -25,6 +25,7 @@ const nivel1 = [
 
 class Tablero{
     #contenedor = document.createElement('div'); //propiedad protegida solo es visible dentro de la clase
+    #idAnimacion = null;
     crear(){
         this.#contenedor.classList.add('tablero');
 
@@ -68,7 +69,29 @@ class Tablero{
         alert(id)
         document.getElementById(id).classList.remove('personaje');//quitamos personaje
         document.getElementById(id).classList.add('bomba');//ponemos bomba
+        this.#animacion(id);
     }
+    #animacion(id){
+		let cuadro = 1;
+		let celda = document.getElementById(id);
+
+		const animacion = () =>{
+			celda.classList.remove(`bomba-${cuadro}`);
+			cuadro++;
+			if (cuadro>heroe.explosion) {
+				this.#detenerExplosion(id);
+			}
+			celda.classList.add(`bomba-${cuadro}`);
+		}
+		this.#idAnimacion = setInterval(animacion,heroe.t);
+	}
+
+	#detenerExplosion(id){
+		let celda = document.getElementById(id);
+		celda.classList.remove("bomba", "bomba-7");
+		celda.classList.add(`personaje`);
+		window.clearInterval(this.#idAnimacion);
+	}
 
     
 

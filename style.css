@@ -49,5 +49,37 @@
 }
 
 .bomba{
-    background: url('assets/objetos/bomba.png') no-repeat 
-} 
+    background: url(assets/objetos/bomba.png)  no-repeat;
+}
+.bomba-1{
+    background: url(assets/objetos/explosion.png) no-repeat;
+    background-position-x: -20;
+}
+.bomba-2{
+    background: url(assets/objetos/explosion.png)  no-repeat;
+    background-position-x: -60px;
+}
+.bomba-3{
+    background: url(assets/objetos/explosion.png)  no-repeat;
+    background-position-x: -115px;
+}
+.bomba-4{
+    background: url(assets/objetos/explosion.png)  no-repeat;
+    background-position-x: 0px;
+    background-position-y: -50px;
+}
+.bomba-5{
+    background: url(assets/objetos/explosion.png)  no-repeat;
+    background-position-x: -60px;
+    background-position-y: -50px;
+}
+.bomba-6{
+    background: url(imagenes/objetos/explosion.png) no-repeat;
+    background-position-x: -120px;
+    background-position-y: -50px;
+}
+.bomba-7{
+    background: url(imagenes/objetos/explosion.png) no-repeat;
+    background-position-x: -60px;
+    background-position-y: -150px;
+}
