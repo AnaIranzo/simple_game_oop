@@ -1,7 +1,8 @@
 class Personaje{
     x = 10;
     y = 2;
-    #personaje = document.createElement("div");
+    #personaje = document.createElement("div");//division
+    #direccion = null;
   
     crear() {
       const estilos = document.createElement("style");
@@ -24,5 +25,13 @@ class Personaje{
   
       const raiz = document.getElementById("root");
       raiz.appendChild(this.#personaje);
+    }
+
+    eliminar(){
+      this.#personaje.remove();
+    }
+    mover(direccionNueva, permisoMover){
+      this.#direccion = direccionNueva;
+      console.log(this.#direccion)
     }
   }

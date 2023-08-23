@@ -14,9 +14,13 @@ const pantallaInicio = new SplashScreen();
 	}
 	function detectarTeclado(e) {
 		const tecla = event.key;
-  		if(tecla==" "){
+		const direccion = flechas[event.key];
+  		if(tecla==" "){ //si barra espaciadora bomba
   			tablero.bomba();
-  		}
+  		} else if(!direccion){
+			return;
+		}
+		personaje.mover(direccion, true); // le pasamos la direccion y el true para tomar como valido ese movimiento
 	}
 
 
