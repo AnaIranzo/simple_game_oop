@@ -1,5 +1,4 @@
-const MAX_CUADRO = 2;
-const TIEMPO = 250;
+
 
 class SplashScreen{
     #contenedor = document.createElement('div'); //propiedad protegida solo es visible dentro de la clase

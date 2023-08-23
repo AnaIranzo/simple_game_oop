@@ -34,4 +34,8 @@ class Personaje{
       this.#direccion = direccionNueva;
       console.log(this.#direccion)
     }
+
+    #actualizar(){
+      console.log('actualizar')
+    }
   }
